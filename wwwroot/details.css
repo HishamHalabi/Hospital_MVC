@@ -1,0 +1,263 @@
+﻿/* details.css - styles for all detail pages */
+
+h1 {
+    text-align: center;
+    color: #0f172a;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(to right, #0ea5e9, #0284c7);
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 6px;
+        transition: background 0.3s ease;
+    }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+
+h1 {
+    text-align: center;
+    color: #0f172a;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h4 {
+    text-align: center;
+    color: #1e293b;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+/* Card container */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-4px);
+    }
+
+/* Card Header */
+.card-header {
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border-bottom: 2px solid transparent;
+    user-select: none;
+    border-radius: 12px 12px 0 0;
+}
+
+    /* Different header colors for sections */
+    .card-header.bg-primary {
+        background: linear-gradient(90deg, #3b82f6, #2563eb);
+        color: white;
+        border-bottom-color: #1e40af;
+    }
+
+    .card-header.bg-success {
+        background: linear-gradient(90deg, #22c55e, #15803d);
+        color: white;
+        border-bottom-color: #166534;
+    }
+
+    .card-header.bg-info {
+        background: linear-gradient(90deg, #0ea5e9, #0284c7);
+        color: white;
+        border-bottom-color: #0369a1;
+    }
+
+    .card-header.bg-danger {
+        background: linear-gradient(90deg, #ef4444, #b91c1c);
+        color: white;
+        border-bottom-color: #7f1d1d;
+    }
+
+/* Card Body */
+.card-body {
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #334155;
+}
+
+/* Definition list styling for info display */
+dl.row {
+    margin: 0;
+}
+
+dt.col-sm-3 {
+    font-weight: 600;
+    color: #0f172a;
+    padding-bottom: 0.4rem;
+}
+
+dd.col-sm-9 {
+    margin-left: 0;
+    padding-bottom: 0.8rem;
+    color: #475569;
+}
+
+/* Tables within details */
+table.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.table th,
+.table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+    font-weight: 500;
+    color: #334155;
+}
+
+.table thead tr {
+    background: linear-gradient(90deg, #bfdbfe, #60a5fa);
+    color: #1e3a8a;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
+
+/* Table links (e.g., details buttons inside table) */
+.table a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1.5px solid #2563eb;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .table a:hover,
+    .table a:focus {
+        background-color: #2563eb;
+        color: white;
+        text-decoration: none;
+        outline: none;
+    }
+
+/* Buttons on detail pages */
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    color: white;
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+}
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+        background: linear-gradient(90deg, #2563eb, #1e40af);
+        outline: none;
+    }
+
+.btn-warning {
+    background: linear-gradient(90deg, #f59e0b, #b45309);
+    color: white;
+    box-shadow: 0 4px 8px rgba(245, 158, 11, 0.3);
+}
+
+    .btn-warning:hover,
+    .btn-warning:focus {
+        background: linear-gradient(90deg, #b45309, #78350f);
+        outline: none;
+    }
+
+.btn-secondary {
+    background: #64748b;
+    color: white;
+    box-shadow: 0 4px 8px rgba(100, 116, 139, 0.3);
+}
+
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+        background: #475569;
+        outline: none;
+    }
+
+/* Container for action buttons */
+.mb-4 > .btn {
+    margin-right: 0.75rem;
+}
+
+/* Text for empty tables */
+.text-muted {
+    color: #94a3b8;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .card {
+        margin: 1rem 0;
+    }
+
+    .table th,
+    .table td {
+        padding: 12px 8px;
+    }
+
+    .mb-4 > .btn {
+        margin-bottom: 0.8rem;
+        width: 100%;
+        display: block;
+    }
+}
+
+
+footer.footer {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+    background: white;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+}
